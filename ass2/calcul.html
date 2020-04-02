@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <meta charset="utf-8">
+    <h1>Calculator</h1>
+    <script>
+        var num = document.getElementById('blank').value.value;
+        function NumberHander(value){
+            document.getElementById('blank').value = document.getElementById('blank').value+value;
+            
+        }
+        function add(value){
+            document.getElementById('blank').value = 0;
+        }
+    </script>
+</head>
+<body>
+
+    <table border="1" align = "center">
+        <tr>
+
+        <th colspan ="4"><input type="text" autofocus id="blank"><br></th>
+        </tr>
+        <tr>
+            <td colspan ="4"><input type="text"><br></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="NumberHander(7)" style="width:100%"></td>
+            <td><input type="button" value="8" onclick="NumberHander(8)" style="width:100%"></td>
+            <td><input type="button" value="9" onclick="NumberHander(9)" style="width:100%"></td>
+            <td><input type="button" value="C" onclick="NumberHander()" style="width:100%"></td>
+        </tr>
+        
+        <tr>
+            <td><input type="button" value="4" onclick="NumberHander(4)" style="width:100%"></td>
+            <td><input type="button" value="5" onclick="NumberHander(5)" style="width:100%"></td>
+            <td><input type="button" value="6" onclick="NumberHander(6)" style="width:100%"></td>
+            <td><input type="button" value="+" onclick="add(num)" style="width:100%"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="NumberHander(1)" style="width:100%"></td>
+            <td><input type="button" value="2" onclick="NumberHander(2)" style="width:100%"></td>
+            <td><input type="button" value="3" onclick="NumberHander(3)" style="width:100%"></td>
+            <td><input type="button" value="-" onclick="NumberHander('-')" style="width:100%"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="NumberHander(0)" style="width:100%"></td>
+            <td><input type="button" value="=" onclick="NumberHander('=')" style="width:100%"></td>
+            <td><input type="button" value="/" onclick="NumberHander('/')" style="width:100%"></td>
+            <td><input type="button" value="*" onclick="NumberHander('*')" style="width:100%"></td>
+        </tr>
+</body>
