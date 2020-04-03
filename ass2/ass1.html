@@ -66,72 +66,14 @@
             if (rnd == 0) {
                     rnd = 1;
             }
+            console.log(rnd);
             document.getElementById("targetimg1").src = myImages1[rnd];
-            
-}
-    </script>
-    <script>
-        function randomImg2() {
-            var myImages1 = new Array();
-            for(var i=1; i<53; i++){
-                myImages1[i] = "card/"+i.toString() + ".png";    
-            }
-            // myImages1[1] = "card/1.png";
-            // myImages1[2] = "card/2.png";
-            // myImages1[3] = "card/3.png";
-            // myImages1[4] = "card/4.png";
-            // myImages1[5] = "card/5.png";
-            // myImages1[6] = "card/6.png";
-            // myImages1[7] = "card/7.png";
-            // myImages1[8] ="card/8.png";
-            // myImages1[9] = "card/9.png";
-            // myImages1[10] = "card/10.png";
-            // myImages1[11] ="card/11.png";
-            // myImages1[12] ="card/12.png";
-            // myImages1[13] = "card/13.png";
-            // myImages1[14] ="card/14.png";
-            // myImages1[15] = "card/15.png";
-            // myImages1[16] = "card/16.png";
-            // myImages1[17] = "card/17.png";
-            // myImages1[18] = "card/18.png";
-            // myImages1[19] = "card/19.png";
-            // myImages1[20] = "card/20.png";
-            // myImages1[21] = "card/21.png";
-            // myImages1[22] = "card/22.png";
-            // myImages1[23] ="card/23.png";
-            // myImages1[24] ="card/24.png";
-            // myImages1[25] = "card/25.png";
-            // myImages1[26] ="card/26.png";
-            // myImages1[27] ="card/27.png";
-            // myImages1[28] ="card/28.png";
-            // myImages1[29] = "card/29.png";
-            // myImages1[30] ="card/30.png";
-            // myImages1[31] = "card/31.png";
-            // myImages1[32] = "card/32.png";
-            // myImages1[33] ="card/33.png";
-            // myImages1[34] = "card/34.png";
-            // myImages1[35] = "card/35.png";
-            // myImages1[36] = "card/36.png";
-            // myImages1[37] ="card/37.png";
-            // myImages1[38] = "card/38.png";
-            // myImages1[39] ="card/39.png";
-            // myImages1[40] = "card/40.png";
-            // myImages1[41] = "card/41.png";
-            // myImages1[42] = "card/42.png";
-            // myImages1[43] = "card/43.png";
-            // myImages1[44] = "card/44.png";
-            // myImages1[45] = "card/45.png";
-            // myImages1[46] ="card/46.png";
-            // myImages1[47] = "card/47.png";;
-            // myImages1[48] = "card/48.png";
-            // myImages1[49] = "card/49.png";
-            // myImages1[50] = "card/50.png";
-            // myImages1[51] ="card/51.png";
-            // myImages1[52] = "card/52.png";
+
             var rnd = Math.floor(Math.random() * myImages1.length);
             if (rnd == 0) {
                     rnd = 1;
             }
+            console.log(rnd);
             document.getElementById("targetimg2").src = myImages1[rnd];
             
 }
@@ -143,7 +85,7 @@
     <h1 >홀짝</h1>
     <p >시간 초 : ???</p>
     <table>
-        <th colspan ="3"><input type="button" value="카드 바꾸기" style="width: 100%;"  onclick="randomImg1();randomImg2();" /><br></th>
+        <th colspan ="3"><input type="button" value="카드 바꾸기" style="width: 100%;"  onclick="randomImg1();" /><br></th>
         <tr>
             <td>현재 카드</td>
             <td>다음 카드</td>
